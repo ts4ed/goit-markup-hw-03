@@ -7,6 +7,16 @@
   --third-bg-color: #f5f4fa;
   --accent-text-color: #2196f3;
 }
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-style: 400;
@@ -47,9 +57,7 @@ img {
   text-decoration: none;
   color: var(--primary-text-color);
 }
-.link:hover {
-  color: var(--accent-text-color);
-}
+.link:hover,
 .link:focus {
   color: var(--accent-text-color);
 }
@@ -80,10 +88,7 @@ img {
   background-color: var(--accent-text-color);
   color: var(--primary-bg-color);
 }
-.button.primary:hover {
-  background-color: var(--primary-bg-color);
-  color: var(--accent-text-color);
-}
+.button.primary:hover,
 .button.primary:focus {
   background-color: var(--primary-bg-color);
   color: var(--accent-text-color);
@@ -101,10 +106,7 @@ img {
   color: var(--secondary-text-color);
 }
 
-.button.secondary:hover {
-  background-color: var(--accent-text-color);
-  color: var(--third-color-text);
-}
+.button.secondary:hover,
 .button.secondary:focus {
   background-color: var(--accent-text-color);
   color: var(--third-color-text);
@@ -145,13 +147,14 @@ img {
   margin-left: 50px;
 }
 /* Logo */
-.logo {
+.link-logo {
   font-family: 'Raleway' sans-serif;
   font-style: 400;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-decoration: none;
 
   margin-right: 94px;
 
@@ -172,9 +175,7 @@ img {
 
   color: var(--secondary-text-color);
 }
-.nav .link:hover {
-  color: var(--accent-text-color);
-}
+.nav .link:hover,
 .nav .link:focus {
   color: var(--accent-text-color);
 }
@@ -300,21 +301,22 @@ img {
   padding-bottom: 60px;
   color: var(--third-color-text);
 }
-.address p {
-  margin-bottom: 9px;
-}
-
 .items-footer + .items-footer {
   margin-top: 9px;
 }
 .footer .info {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer .info:hover {
-  color: var(--accent-text-color);
-}
+.footer .info:hover,
 .footer .info:focus {
   color: var(--accent-text-color);
+}
+.footer .link.map{
+  color: var(--third-color-text);
+}
+.footer .link.map:hover,
+.footer .link.map:focus{
+color: var(--accent-text-color);
 }
 
 /* Portfolio */
