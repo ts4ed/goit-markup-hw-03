@@ -188,6 +188,9 @@ img {
   background-color: #188ce8;
 }
 /* About */
+.section.about{
+  padding-bottom: 0;
+}
 .about-item{
   flex-basis: calc(100% / 4 - 30px);
 }
